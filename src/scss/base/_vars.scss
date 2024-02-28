@@ -1,19 +1,18 @@
 :root {
-	--container-width: 1200px;
+	--container-width: 1210px;
 	--container-padding: 15px;
 
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+	--font-main: 'Inter', sans-serif;
+	--font-title: 'Montserrat', sans-serif;
+	--font-secondary: 'Playfair Display', serif;
 
 	--content-bg: black;
 	--border: 5px;
-	--gradient: linear-gradient(to right, orange, red);
-	--hover-gradient: linear-gradient(to right, red, purple);
 	--radius: 12px;
 
-	--page-bg: #fff;
-	--text-color: #000;
-	--accent: #ac182c;
+	--page-bg: #202D45;
+	--text-color: white;
+	--accent: #E5BF9B;
 
     --laptop-size: 1199px;
 	--tablet-size: 959px;
