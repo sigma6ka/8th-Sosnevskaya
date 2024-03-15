@@ -1,0 +1,135 @@
+.advantages {
+	position: relative;
+	z-index: 100;
+	margin-top: -61px;
+	margin-bottom: 100px;
+  &__title {
+		position: relative;
+		z-index: 50;
+    margin-bottom: 60px;
+  }
+
+  &__container {
+		position: relative;
+		z-index: 50;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    user-select: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    cursor: grab;
+  }
+
+  &__items {
+		display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  &__item-box {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    gap: 20px;
+  }
+
+  &__item-small {
+  }
+
+  &__item {
+		min-width: 538px;
+  }
+
+  &__item-image {
+		margin-bottom: 12px;
+    border-radius: 21px;
+
+    img {
+      border-radius: 21px;
+      user-drag: none;
+      -moz-user-drag: none;
+      -webkit-user-drag: none;
+    }
+  }
+	
+  &__item-title {
+		display: flex;
+		gap: 15px;
+		align-items: end;
+		flex-wrap: wrap;
+  }
+  &__item-count {
+    &._count {
+      font-family: var(--font-secondary);
+      font-size: 48px;
+      color: var(--accent);
+    }
+  }
+  &__item-text {
+		&._text {
+			margin-bottom: 3px;
+		}
+  }
+}
+.container-right {
+}
+
+.advantages-item-small {
+  &__image {
+		height: 228px;
+		margin-bottom: 12px;
+    border-radius: 21px;
+
+    img {
+      border-radius: 21px;
+      user-drag: none;
+      -moz-user-drag: none;
+      -webkit-user-drag: none;
+    }
+  }
+  &__title {
+		display: flex;
+		gap: 15px;
+		align-items: end;
+		white-space: normal;
+  }
+
+  &__title-count {
+		&._count {
+      font-family: var(--font-secondary);
+      font-size: 48px;
+      color: var(--accent);
+    }
+  }
+  &__text {
+		&._text {
+			margin-bottom: 3px;
+		}
+  }
+}
+
+.circle {
+	width: 1044px;
+	height: 1044px;
+	border-radius: 50%;
+	&._left {
+		position: absolute;
+		filter: blur(900px);
+		top: -265px;
+		left: -408px;
+		z-index: 40;
+		background-color: rgba(0, 10, 255, 0.2);
+	}
+	&._right {
+		position: absolute;
+		filter: blur(900px);
+		top: 200px;
+		right: -556px;
+		z-index: 40;
+		background-color: rgba(0, 209, 255, 0.2);
+	}
+}

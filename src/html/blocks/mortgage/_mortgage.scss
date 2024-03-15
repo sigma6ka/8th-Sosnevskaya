@@ -1,0 +1,122 @@
+.mortgage {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__container {
+    & > *:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__btns {
+    display: flex;
+    gap: 8px;
+  }
+  &__btn {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    padding: 18px 30px;
+		cursor: pointer;
+
+    &._active {
+      border: 2px solid var(--accent);
+    }
+  }
+  &__advantages {
+    display: flex;
+    gap: 20px;
+  }
+  &__advantages-box {
+    max-width: 380px;
+  }
+  &__advantages-title {
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 32px;
+    color: #edf0f4;
+    margin-bottom: 20px;
+  }
+  &__advantages-desc {
+    font-size: 14px;
+    line-height: 180%;
+    color: #bcc1c9;
+  }
+  &__partners {
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__btn-feedback {
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 160%;
+		max-width: 380px;
+  }
+}
+.container {
+}
+
+.mortgage-partners {
+  &__title {
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-size: 32px;
+    color: #edf0f4;
+    margin-bottom: 20px;
+  }
+  &__rows {
+    width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & > *:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    & > * {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      &._head {
+        border-bottom: 1px solid var(--accent);
+      }
+    }
+  }
+  &__row {
+    width: 1180px;
+    display: grid;
+    grid-template-columns: 295px 195px 195px 195px 159px 116px;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 16px;
+
+    &._head {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__row-text {
+    font-size: 14px;
+    line-height: 180%;
+    color: #edf0f4;
+
+    &._head {
+      font-size: 13px;
+      line-height: 140%;
+      color: #727b8c;
+    }
+
+    &._name-bank {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &._request {
+      font-weight: 500;
+      color: var(--accent);
+			cursor: pointer;
+    }
+  }
+}

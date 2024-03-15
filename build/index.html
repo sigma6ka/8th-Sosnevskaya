@@ -1,55 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Стартовый шаблон</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/iconsfont.css">
-</head>
-<body>
-    <header class="header">
-	<div class="header__container">
-		<div class="header__box">
-			<button class="mobile-nav-btn">
-				<span class="nav-icon"></span>
-			</button>		
-			<a href="./index.html" class="header__logo"><img src="./img/Logo.svg" alt="Logo"></a>
-		</div>
-		<nav class="header__menu menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a href="#!" class="menu__link">Преимущества</a></li>
-				<li class="menu__item"><a href="#!" class="menu__link">Инфраструктура</a></li>
-				<li class="menu__item"><a href="#!" class="menu__link">Квартиры</a></li>
-				<li class="menu__item"><a href="#!" class="menu__link">Ипотека</a></li>
-				<li class="menu__item"><a href="#!" class="menu__link">Контакты</a></li>
-			</ul>
-		</nav>
-		<a href="tel:+74952554824" class="header__phone phone">
-			<div class="phone__img _pulse"><img src="./img/phone.svg" alt="phone"></div>
-			<div class="phone__numb">+7 (495) 255-48-24</div>
-		</>
-	</div>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+    <div class="header__container container">
+        <div class="header__box">
+            <button class="mobile-nav-btn">
+                <span class="nav-icon"></span>
+            </button>
+            <a href="./index.html" class="header__logo"><img src="./img/Logo.svg" alt="Logo"></a>
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#!" class="menu__link">Преимущества</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Инфраструктура</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Квартиры</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Ипотека</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="tel:+74952554824" class="header__phone phone">
+            <div class="phone__img _pulse"><img src="./img/phone.svg" alt="phone"></div>
+            <div class="phone__numb">+7&#160;495&#160;255-48-24</div>
+        </>
+    </div>
 </header>
 <div class="mobile-nav">
-	<ul class="mobile-nav__list">
-		<li><a href="#" class="active">Home</a></li>
-		<li><a href="#!">Services</a></li>
-		<li><a href="#!">About</a></li>
-		<li><a href="#!">Projects</a></li>
-		<li><a href="#!">Contact</a></li>
-	</ul>
+    <ul class="mobile-nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="docs.html">Документация</a></li>
+    </ul>
 </div>
-    <main class="page">
-	<section class="page__main-block main-block">
-	
+
+      <main class="page">
+        <section class="page__main-block main-block">
+  <div class="main-block__container container">
+    <div class="main-block__box">
+      <h1 class="main-block__title">
+        <div class="main-block__title-text">8-я</div>
+        <div class="main-block__title-text">Сосневская</div>
+      </h1>
+      <p class="main-block__desc">
+        Удивлять&#160;&#8212; вот кредо проекта. Давать больше, чем принято стандартами,
+        предугадывать желания. Комплекс создается по&#160;принципу клубной
+        самодостаточности для взыскательных клиентов&#160;&#8212; здесь предусмотрено все
+        для каждого члена семьи.
+      </p>
+    </div>
+    <div class="main-block__advantages">
+            <div class="advant-items__item advant-items-item">
+  <div class="advant-items-item__title">
+    <p class="advant-items-item__text">14</p>
+    <p class="advant-items-item__text">/</p>
+    <p class="advant-items-item__text">Минут</p>
+  </div>
+  <p class="advant-items-item__desc">Пешком до&#160;метро &#171;Тульская&#187;</p>
+</div>
+
+            <div class="advant-items__item advant-items-item">
+  <div class="advant-items-item__title">
+    <p class="advant-items-item__text">21</p>
+    <p class="advant-items-item__text">/</p>
+    <p class="advant-items-item__text">Минут</p>
+  </div>
+  <p class="advant-items-item__desc">Пешком до&#160;метро &#171;Тульская&#187;</p>
+</div>
+            <div class="advant-items__item advant-items-item">
+  <div class="advant-items-item__title">
+    <p class="advant-items-item__text">100</p>
+    <p class="advant-items-item__text">/</p>
+    <p class="advant-items-item__text">Метров</p>
+  </div>
+  <p class="advant-items-item__desc">До&#160;кремля</p>
+</div>
+    </div>
+  </div>
+  <div class="main-block__image _ibg">
+    <img src="./img/main-block/main-image.jpg" alt="Main Image" />
+  </div>
 </section>
-</main>
-    <footer class="footer">
+        <section class="page__advantages advantages">
+    <h2 class="advantages__title container-right _title-2">Преимущества</h2>
+    <div class="advantages__container container-right">
+        <div class="advantages__items">
+            <div class="advantages__item-box">
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Individual-heating.jpg" alt="Индивидуальное отопление"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">01</div>
+                        <div class="advantages-item-small__text _text">Индивидуальное <br> отопление</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Underfloor-heating.jpg" alt="Тёплые полы"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">02</div>
+                        <div class="advantages-item-small__text _text">Тёплые <br> полы</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Panoramic-glazing-loggias.jpg" alt="Панорамное остекление лоджий"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">03</div>
+                        <div class="advantages-item-small__text _text">Панорамное <br> остекление лоджий</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Closed-area.jpg" alt="Закрытая территория"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">04</div>
+                        <div class="advantages-item-small__text _text">Закрытая <br> территория</div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-image "><img src="./img/advantages/Video-surveillance.jpg" alt="Видеонаблюдение придомовой территории и подъезда"></div>
+                <div class="advantages__item-title">
+                    <div class="advantages__item-count _count">05</div>
+                    <div class="advantages__item-text _text">Видеонаблюдение придомовой <br> территории и&#160;подъезда</div>
+                </div>
+            </div>
+            <div class="advantages__item-box">
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Smart-intercom.jpg" alt="Умный домофон"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">06</div>
+                        <div class="advantages-item-small__text _text">Умный <br> домофон</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Baskets-for-air-conditioning.jpg" alt="Корзины под кондиционер"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">07</div>
+                        <div class="advantages-item-small__text _text">Корзины под <br> кондиционер</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Rough-finish.jpg" alt="Черновая отделка"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">08</div>
+                        <div class="advantages-item-small__text _text">Черновая <br> отделка</div>
+                    </div>
+                </div>
+                <div class="advantages__item-small advantages-item-small">
+                    <div class="advantages-item-small__image "><img src="./img/advantages/Storerooms-on-the-floor.jpg" alt="Кладовые на этаже"></div>
+                    <div class="advantages-item-small__title">
+                        <div class="advantages-item-small__title-count _count">09</div>
+                        <div class="advantages-item-small__text _text">Кладовые <br> на&#160;этаже</div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-image "><img src="./img/advantages/Modern-layouts.jpg" alt="Современные планировки"></div>
+                <div class="advantages__item-title">
+                    <div class="advantages__item-count _count">10</div>
+                    <div class="advantages__item-text _text">Современные <br> планировки</div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__item-image "><img src="./img/advantages/Cellar-in-the-ground-floor-apartments.jpg" alt="Погреб в квартирах первого этажа"></div>
+                <div class="advantages__item-title">
+                    <div class="advantages__item-count _count">11</div>
+                    <div class="advantages__item-text _text">Погреб в&#160;квартирах <br> первого этажа</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="circle _left"></div>
+    <div class="circle _right"></div>
+</section>
+        <section class="page__slider slider">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper container">
+      <!-- Slides -->
+      <div class="swiper-slide">
+                <div class="swiper-slide__image _ibg">
+                    <img src="./img/slider/image-slide-1.jpg" alt="">
+                </div>
+            </div>
+      <div class="swiper-slide">
+                <div class="swiper-slide__image _ibg">
+                    <img src="./img/slider/image-slide-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide__image _ibg">
+                    <img src="./img/slider/image-slide-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide__image _ibg">
+                    <img src="./img/slider/image-slide-2.jpg" alt="">
+                </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+        <section class="page__rooms rooms">
+    <div class="rooms__container container">
+        <div class="rooms__box">
+            <div class="rooms__title _title-2">Квартиры</div>
+            <div class="rooms__progress rooms-progress">
+                <div class="rooms-progress__title">Шаг <span>1</span> из&#160;2</div>
+            </div>
+        </div>
+        <div class="rooms__image"><img src="./img/rooms/rooms-img-1.png" alt=""></div>
+    </div>
+</section>
+        <section class="page__infrastructure infrastructure">
+  <h2 class="infrastructure__title _title-2 container">Инфраструктура</h2>
+  <div class="infrastructure__items">
+    <div class="infrastructure__item">
+      <div class="infrastructure__item-box">
+        <div class="infrastructure__item-title">
+          <div class="infrastructure__item-title-count">01</div>
+          <div class="infrastructure__item-title-txt">Библиотека</div>
+        </div>
+        <div class="infrastructure__item-desc">
+          Взрослые деревья, медитативная гладь пруда и&#160;деликатно вписанные в
+          зеленое окружение
+        </div>
+      </div>
+      <div class="infrastructure__item-image _ibg">
+        <img src="./img/infrastructure/library.jpg" alt="" />
+      </div>
+    </div>
+    <div class="infrastructure__item">
+      <div class="infrastructure__item-box">
+        <div class="infrastructure__item-title">
+          <div class="infrastructure__item-title-count">02</div>
+          <div class="infrastructure__item-title-txt">Бассейн</div>
+        </div>
+        <div class="infrastructure__item-desc">
+          Взрослые деревья, медитативная гладь пруда и&#160;деликатно вписанные в
+          зеленое окружение
+        </div>
+      </div>
+      <div class="infrastructure__item-image _ibg">
+        <img src="./img/infrastructure/swimming-pool.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="infrastructure__items">
+    <div class="infrastructure__item">
+      <div class="infrastructure__item-box">
+        <div class="infrastructure__item-title">
+          <div class="infrastructure__item-title-count">03</div>
+          <div class="infrastructure__item-title-txt">Парковка</div>
+        </div>
+        <div class="infrastructure__item-desc">
+          Взрослые деревья, медитативная гладь пруда и&#160;деликатно вписанные в
+          зеленое окружение
+        </div>
+      </div>
+      <div class="infrastructure__item-image _ibg">
+        <img src="./img/infrastructure/parking-space.jpg" alt="" />
+      </div>
+    </div>
+    <div class="infrastructure__item">
+      <div class="infrastructure__item-box">
+        <div class="infrastructure__item-title">
+          <div class="infrastructure__item-title-count">04</div>
+          <div class="infrastructure__item-title-txt">Фитнес</div>
+        </div>
+        <div class="infrastructure__item-desc">
+          Взрослые деревья, медитативная гладь пруда и&#160;деликатно вписанные в
+          зеленое окружение
+        </div>
+      </div>
+      <div class="infrastructure__item-image _ibg">
+        <img src="./img/infrastructure/fitness.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="page__mortgage mortgage">
+    <h2 class="mortgage__title _title-2 container">Ипотека</h2>
+  <div class="mortgage__container container">
+    <div class="mortgage__btns">
+      <div class="mortgage__btn _active">Ипотека</div>
+      <div class="mortgage__btn">Семейная ипотека</div>
+      <div class="mortgage__btn">Ипотека с&#160;господдержкой</div>
+      <div class="mortgage__btn">IT&#160;ипотека</div>
+    </div>
+    <div class="mortgage__advantages">
+      <div class="mortgage__advantages-box">
+        <div class="mortgage__advantages-title">Лучшие банки</div>
+        <div class="mortgage__advantages-desc">
+          Мы&#160;сотрудничаем с&#160;лучшими банками для предоставления вам ипотеки с
+          отличными условиями
+        </div>
+      </div>
+      <div class="mortgage__advantages-box">
+        <div class="mortgage__advantages-title">Льготные программы</div>
+        <div class="mortgage__advantages-desc">
+          Наш дом подходит под большинство льготных программ которые существую в
+          России
+        </div>
+      </div>
+    </div>
+    <div class="mortgage__partners mortgage-partners">
+      <div class="mortgage-partners__title">Банки&#160;&#8212;&#160;партнеры</div>
+      <div class="mortgage-partners__rows">
+        <div class="mortgage-partners__row _head">
+          <div class="mortgage-partners__row-text _head">Банк</div>
+          <div class="mortgage-partners__row-text _head">
+            Первоначальный взнос
+          </div>
+          <div class="mortgage-partners__row-text _head">Срок кредитования</div>
+          <div class="mortgage-partners__row-text _head">Процентная ставка</div>
+          <div class="mortgage-partners__row-text _head">
+            Ежемесячный платеж
+          </div>
+          <div class="mortgage-partners__row-text _head"></div>
+        </div>
+        <div class="mortgage-partners__row">
+          <div class="mortgage-partners__row-text _name-bank">
+            <img src="./img/mortgage/alpfa-bank.svg" alt="" />
+            <div>Альфабанк</div>
+          </div>
+          <div class="mortgage-partners__row-text">30%</div>
+          <div class="mortgage-partners__row-text">От&#160;1 до&#160;30 лет</div>
+          <div class="mortgage-partners__row-text">12.6%</div>
+          <div class="mortgage-partners__row-text">92 767 ₽</div>
+          <div class="mortgage-partners__row-text _request">
+            Оставить заявку
+          </div>
+        </div>
+
+        <div class="mortgage-partners__row">
+          <div class="mortgage-partners__row-text _name-bank">
+            <img src="./img/mortgage/sberbank.svg" alt="" />
+            <div>Сбербанк</div>
+          </div>
+          <div class="mortgage-partners__row-text">30%</div>
+          <div class="mortgage-partners__row-text">От&#160;1 до&#160;30 лет</div>
+          <div class="mortgage-partners__row-text">12.6%</div>
+          <div class="mortgage-partners__row-text">92 767 ₽</div>
+          <div class="mortgage-partners__row-text _request">
+            Оставить заявку
+          </div>
+        </div>
+
+        <div class="mortgage-partners__row">
+          <div class="mortgage-partners__row-text _name-bank">
+            <img src="./img/mortgage/at-bank.svg" alt="" />
+            <div>
+              Азиатско <br />
+              Тихоокеанский банк
+            </div>
+          </div>
+          <div class="mortgage-partners__row-text">30%</div>
+          <div class="mortgage-partners__row-text">От&#160;1 до&#160;30 лет</div>
+          <div class="mortgage-partners__row-text">12.6%</div>
+          <div class="mortgage-partners__row-text">92 767 ₽</div>
+          <div class="mortgage-partners__row-text _request">
+            Оставить заявку
+          </div>
+        </div>
+
+        <div class="mortgage-partners__row">
+          <div class="mortgage-partners__row-text _name-bank">
+            <img src="./img/mortgage/v-bank.svg" alt="" />
+            <div>
+              Всероссийский <br />
+              банк развития регионов
+            </div>
+          </div>
+          <div class="mortgage-partners__row-text">30%</div>
+          <div class="mortgage-partners__row-text">От&#160;1 до&#160;30 лет</div>
+          <div class="mortgage-partners__row-text">12.6%</div>
+          <div class="mortgage-partners__row-text">92 767 ₽</div>
+          <div class="mortgage-partners__row-text _request">
+            Оставить заявку
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="mortgage__box">
+            <div class="mortgage__btn-feedback _btn">Напишите нам</div>
+            <div class="mortgage__desc">Подберем для вас лучшие <br> условия кредитования</div>
+        </div>
+  </div>
+</section>
+
+        <section class="page__location location">
+    <div class="location__container container">
+        <div class="location__wrapper">
+            <div class="location__box">
+                <h2 class="location__title _title-2">Локация</h2>
+                <div class="location__desc">Удобное расположение. Поблизости парки, торговые центры, кинотеатры и&#160;другие места для отдыха</div>
+                <div class="location__more-detailed location-more-detailed">
+                    <div class="location-more-detailed__item">
+                        <div class="location-more-detailed__item-ico"><img src="./img/icons/park.svg" alt=""></div>
+                        <div class="location-more-detailed__item-text">Парк</div>
+                    </div>
+                    <div class="location-more-detailed__item">
+                        <div class="location-more-detailed__item-ico"><img src="./img/icons/sport.svg" alt=""></div>
+                        <div class="location-more-detailed__item-text">Спорт</div>
+                    </div>
+                    <div class="location-more-detailed__item">
+                        <div class="location-more-detailed__item-ico"><img src="./img/icons/shop.svg" alt=""></div>
+                        <div class="location-more-detailed__item-text">Магазин</div>
+                    </div>
+                    <div class="location-more-detailed__item">
+                        <div class="location-more-detailed__item-ico"><img src="./img/icons/restaurant.svg" alt=""></div>
+                        <div class="location-more-detailed__item-text">Ресторан</div>
+                    </div>
+                    <div class="location-more-detailed__item">
+                        <div class="location-more-detailed__item-ico"><img src="./img/icons/body-of-water.svg" alt=""></div>
+                        <div class="location-more-detailed__item-text">Водоем</div>
+                    </div>
+                </div>
+            </div>
+            <div class="location__advantages">
+                <div class="advant-items__item advant-items-item">
+  <div class="advant-items-item__title">
+    <p class="advant-items-item__text">14</p>
+    <p class="advant-items-item__text">/</p>
+    <p class="advant-items-item__text">Минут</p>
+  </div>
+  <p class="advant-items-item__desc">Пешком до&#160;метро &#171;Тульская&#187;</p>
+</div>
+
+                <div class="advant-items__item advant-items-item">
+  <div class="advant-items-item__title">
+    <p class="advant-items-item__text">21</p>
+    <p class="advant-items-item__text">/</p>
+    <p class="advant-items-item__text">Минут</p>
+  </div>
+  <p class="advant-items-item__desc">Пешком до&#160;метро &#171;Тульская&#187;</p>
+</div>
+            </div>
+        </div>
+        <div class="location__image"><img src="./img/location/map-img.png" alt=""></div>
+    </div>
+</section>
+        <section class="page__contacts contacts">
+    <div class="contacts__container container">
+        <h2 class="contacts__title _title-2">Контакты</h2>
+        <div class="contacts__box">
+            <div class="contacts__data contacts-data">
+                <div class="contacts-data__items">
+                    <div class="contacts-data__item">
+                        <a href="#!" class="contacts-data__item-link">
+                            <div class="contacts-data__item-ico"><img src="./img/icons/phone.svg" alt=""></div>
+                            <div class="contacts-data__item-text">+7&#160;495&#160;255-48-24</div>
+                        </a>
+                        <div class="contacts-data__item-desc">Отдел продаж. Работаем в&#160;будние <br> дни с&#160;9:00 до&#160;18:00</div>
+                    </div>
+                    <div class="contacts-data__item">
+                        <a href="#!" class="contacts-data__item-link">
+                            <div class="contacts-data__item-ico"><img src="./img/icons/phone.svg" alt=""></div>
+                            <div class="contacts-data__item-text">+7&#160;495&#160;255-48-24</div>
+                        </a>
+                        <div class="contacts-data__item-desc">Отдел продаж. Работаем в&#160;будние <br> дни с&#160;9:00 до&#160;18:00</div>
+                    </div>
+                    <div class="contacts-data__item">
+                        <a href="#!" class="contacts-data__item-link">
+                            <div class="contacts-data__item-ico"><img src="./img/icons/mail.svg" alt=""></div>
+                            <div class="contacts-data__item-text">mail@mail.ru</div>
+                        </a>
+                        <div class="contacts-data__item-desc">Пишите нам по&#160;вопросам <br> партнерстваю</div>
+                    </div>
+                </div>
+                <div class="contacts-data__address">
+                    <div><span>Головной офис:</span> <br> Москва, Пресненская набережная, 6с2, башня &#171;Империя&#187;, 3-й подъезд, офис 4315</div>
+                </div>
+            </div>
+            <div class="contacts__btns">
+                <div class="contacts__btns-box">
+                    <a href="#!" class="contacts__link">Ход строительства</a>
+                    <a href="#!" class="contacts__link">Документы</a>
+                </div>
+                <div class="contacts__btn _btn">Напишите нам</div>
+            </div>
+        </div>
+    </div>
+</section>
+      </main>
+      <footer class="footer">
     <div class="footer__container">
-        <h2 class="footer__title">Footer</h2>
+            <h2 class="footer__title">Footer</h2>
     </div>
 </footer>
+    </div>
     <script src="./js/index.bundle.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,24 @@
+.page {
+	&__rooms {
+	}
+}
+.rooms {
+	&__container {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+	}
+	&__box {
+	}
+	&__title {
+	}
+	&__progress {
+	}
+	&__image {
+	}
+}
+
+.rooms-progress {
+	&__title {
+	}
+}

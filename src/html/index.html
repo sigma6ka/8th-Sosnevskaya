@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Стартовый шаблон</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/iconsfont.css">
-</head>
-<body>
-    @@include('blocks/header.html')
-    @@include('blocks/main.html')
-    @@include('blocks/footer.html')
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include('blocks/header.html')
+      <main class="page">
+        @@include('blocks/main-block/main-block.html')
+        @@include('blocks/advantages/advantages.html')
+        @@include('blocks/slider/slider.html')
+        @@include('blocks/rooms/rooms.html')
+        @@include('blocks/Infrastructure/Infrastructure.html')
+        @@include('blocks/mortgage/mortgage.html')
+        @@include('blocks/location/location.html')
+        @@include('blocks/contacts/contacts.html')
+      </main>
+      @@include('blocks/footer.html')
+    </div>
     <script src="./js/index.bundle.js"></script>
-</body>
+  </body>
 </html>

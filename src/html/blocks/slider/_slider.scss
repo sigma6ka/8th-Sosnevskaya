@@ -1,0 +1,27 @@
+.page {
+  &__slider {
+		height: 593px;
+  }
+}
+
+.swiper-slide {
+  width: 100% !important;
+  max-width: 1180px !important;
+  position: relative;
+	cursor: grab;
+
+  &.swiper-slide-active .swiper-slide__image {
+    padding-bottom: 50%;
+    opacity: 1;
+  }
+
+  &__image {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    padding-bottom: 49%;
+    border-radius: 20px;
+    img {
+      border-radius: 20px;
+    }
+  }
+}
