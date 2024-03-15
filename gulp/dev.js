@@ -67,7 +67,7 @@ gulp.task('html:dev', function () {
 
 gulp.task('sass:dev', function () {
 	return gulp
-		.src(['./src/scss/*.scss', './src/html/blocks/**/*.scss'])
+		.src(['./src/scss/**/*.scss', './src/html/blocks/**/*.scss'])
 		.pipe(changed('./build/css/'))
 		.pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
@@ -178,7 +178,7 @@ gulp.task('server:dev', function () {
 });
 
 gulp.task('watch:dev', function () {
-	gulp.watch(['./src/scss/*.scss', './src/html/blocks/**/*.scss'], gulp.parallel('sass:dev'));
+	gulp.watch(['./src/scss/**/*.scss', './src/html/blocks/**/*.scss'], gulp.parallel('sass:dev'));
 	gulp.watch(
 		['./src/html/**/*.html', './src/html/**/*.json'],
 		gulp.parallel('html:dev')

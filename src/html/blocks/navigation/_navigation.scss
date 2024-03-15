@@ -1,0 +1,121 @@
+.navigation {
+	&__container {
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+}
+.container {
+}
+.box {
+	position: relative;
+	z-index: 999;
+	@media screen and (max-width: 1045px) {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+	}
+}
+.mobile-nav-btn {
+}
+.nav-icon {
+}
+.logo {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	& > svg path {
+		transition: all 0.3s ease;
+	}
+	&.active {
+		& > svg:last-child > path {
+			fill: #313131;
+		}
+	}
+}
+.menu {
+	@media screen and (max-width: 1045px) {
+		display: none;
+	}
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -7px;
+      display: block;
+      width: 0;
+      transition: 0.3s;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+  &__link {
+		color: #fff;
+  }
+}
+
+.link-phone {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	&__img {
+		&._pulse {
+      position: relative;
+      width: 42px;
+      height: 42px;
+
+      &::after,
+      &::before {
+        position: absolute;
+        content: "";
+        border: 1px solid var(--accent);
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        border-radius: 50%;
+        opacity: 0;
+        animation: pulse 3s infinite;
+      }
+
+      &::after {
+        animation-delay: 2s;
+      }
+    }
+	}
+	&__numb {
+		@media screen and (max-width: 475px) {
+			display: none;
+		}
+		font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+	}
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}

@@ -2,13 +2,13 @@
 .mobile-nav-btn {
 	--time: 0.1s;
 
-	--width: 40px;
-	--height: 30px;
+	--width: 17px;
+	--height: 10px;
 
-	--line-height: 4px;
-	--spacing: 6px;
+	--line-height: 2px;
+	--spacing: 4px;
 
-	--color: #000;
+	--color: var(--accent);
 	--radius: 4px;
 
 	/* Fixed height and width */
@@ -19,9 +19,18 @@
 	height: calc(var(--line-height) * 3 + var(--spacing) * 2);
 	width: var(--width);
 
-	display: none;
+	@media screen and (min-width: 1046px) {
+		display: none;
+	}
+
+	position: relative;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
 }
 
 .nav-icon {
@@ -59,34 +68,31 @@
 	top: calc(var(--line-height) + var(--spacing));
 }
 
-.nav-icon.nav-icon--active {
+.nav-icon.nav-icon.active {
 	background-color: transparent;
 }
 
-.nav-icon.nav-icon--active::before,
-.nav-icon.nav-icon--active::after {
+.nav-icon.nav-icon.active::before,
+.nav-icon.nav-icon.active::after {
 	top: 0;
 	transition: top var(--time) linear,
 		transform var(--time) ease-in var(--time);
 }
 
-.nav-icon.nav-icon--active::before {
+.nav-icon.nav-icon.active::before {
 	transform: rotate(45deg);
 }
 
-.nav-icon.nav-icon--active::after {
+.nav-icon.nav-icon.active::after {
 	transform: rotate(-45deg);
+}
+
+.mobile-nav-btn.active {
+	border: 1px solid var(--accent);
 }
 
 /* Layout */
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
 }
-
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
