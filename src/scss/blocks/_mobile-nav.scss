@@ -1,26 +1,43 @@
 .mobile-nav {
   position: fixed;
-  // top: 0;
-  left: -100%;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
 	height: 100%;
-  z-index: 80;
-
+	z-index: 80;
+	backdrop-filter: blur(80px);
+	background: rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
 
 
 
 	&__content {
+		position: fixed;
+		left: -100%;
 		display: flex;
 		flex-direction: column;
 		gap: 70px;
-		padding: 120px 40px 40px 20px;
-		background-color: #fff;
+		max-width: 301px;
 		height: 100%;
+		
+		background-color: #fff;
+		transition: all 0.3s ease;
+
+		&.header-padding {
+			padding: 120px 40px 40px 20px;
+		}
+		&.footer-padding {
+			padding: 40px 40px 40px 20px;
+		}
 	}
 }
 
 .mobile-nav.active {
-  left: 0;
+	opacity: 1;
+	visibility: visible;
+	& > .mobile-nav__content {
+		left: 0;
+	}
 }
 
 .mobile-nav a {
@@ -38,10 +55,6 @@
   align-items: left;
   row-gap: 20px;
   font-size: 28px;
-
-  & .active {
-    opacity: 0.5;
-  }
 }
 
 .mobile-link-phone {

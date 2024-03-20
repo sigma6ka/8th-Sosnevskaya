@@ -3,6 +3,11 @@
 	z-index: 100;
 	margin-top: -61px;
 	margin-bottom: 100px;
+
+	@media screen and (max-width: 1200px) {
+		margin-top: -121px;
+	}
+
   &__title {
 		position: relative;
 		z-index: 50;

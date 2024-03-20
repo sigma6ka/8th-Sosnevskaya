@@ -1,24 +1,33 @@
-<section class="page__main-block main-block none">
+<section class="page__main-block main-block">
   <div class="main-block__container container">
-    <div class="main-block__box">
-      <h1 class="main-block__title">
-        <div class="main-block__title-text">8-я</div>
-        <div class="main-block__title-text">Сосневская</div>
-      </h1>
-      <p class="main-block__desc">
-        Удивлять — вот кредо проекта. Давать больше, чем принято стандартами,
-        предугадывать желания. Комплекс создается по принципу клубной
-        самодостаточности для взыскательных клиентов — здесь предусмотрено все
-        для каждого члена семьи.
-      </p>
-    </div>
-    <div class="main-block__advantages">
-			@@include('./../advant-items/advant-item-f.html')
-			@@include('./../advant-items/advant-item-s.html')
-			@@include('./../advant-items/advant-item-t.html')
+    <div class="main-block__wrapper">
+      <div class="main-block__box">
+        <h1 class="main-block__title">
+          <div class="main-block__title-text">8-я</div>
+          <div class="main-block__title-text">Сосневская</div>
+        </h1>
+        <p class="main-block__desc">
+          Удивлять — вот кредо проекта. Давать больше, чем принято стандартами,
+          предугадывать желания. Комплекс создается по принципу клубной
+          самодостаточности для взыскательных клиентов — здесь предусмотрено все
+          для каждого члена семьи.
+        </p>
+				<div class="main-block__btn _btn">Выбрать квартиру</div>
+      </div>
+      <div class="main-block__advantages">
+        @@include('./../advant-items/advant-item-f.html')
+        @@include('./../advant-items/advant-item-s.html')
+        @@include('./../advant-items/advant-item-t.html')
+      </div>
     </div>
   </div>
+  <div class="main-block__image-circle-1 _ibg">
+		<img class="circle-image" src="./img/main-block/main-image.jpg" alt="Main Image" />
+  </div>
+  <div class="main-block__image-circle-2 _ibg">
+		<img class="circle-image" src="./img/main-block/main-image.jpg" alt="Main Image" />
+  </div>
   <div class="main-block__image _ibg">
-    <img src="./img/main-block/main-image.jpg" alt="Main Image" />
+    <img class="main-image" src="./img/main-block/main-image.jpg" alt="Main Image" />
   </div>
 </section>
